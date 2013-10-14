@@ -1,0 +1,18 @@
+<html>
+	<head lang="en">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js">
+		</script>
+		<script src="zippy.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div ng-app="app"> <!-- initialising the angular app -->
+			<!-- <div ng-controller="zippyCtrl">  controller -->
+				<input type="text" ng-model="title">
+				<input type="text" ng-model="content">
+				<zippy title="{{title}}"> <!-- The title is bound and the directive's isolate scope accesses this title -->
+					This is the {{content}}
+				</zippy>
+			<!-- </div>  -->
+		</div> 
+	</body>
+</html>
